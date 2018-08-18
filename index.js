@@ -1,11 +1,5 @@
 const jokes = require('./jokes.json');
-/*
-const jsonHeader = {	'apiVersion': 2, 
-						'numJokes': 0,
-						'ok': true,
-						'jokes': []
-					};
-*/
+
 
 function getRandomInt(min, max){
 	return Math.floor(Math.random() * (max-min + 1) ) + min;
@@ -89,10 +83,6 @@ function getRandomJokesByTag(tag, num){
 	
 }
 
-//console.log(getRandomJokesByTag('chuck', 300));
-//console.log(getRandomJoke() );
-//console.log(getRandomJokes(3) );
-//console.log(jokes.length);
 
 module.exports = {
     getRandomJoke : getRandomJoke,
